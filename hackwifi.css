@@ -1,0 +1,74 @@
+body {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Menetapkan tinggi minimum agar dapat melakukan scrolling */
+    overflow: auto; /* Mengaktifkan scrolling jika konten melebihi tinggi jendela */
+    animation: backgroundAnimation 10s infinite;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .header img {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery img {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    border: 2px solid #333;
+    border-radius: 5px;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-color: #FF5733;
+    }
+    25% {
+      background-color: #33FF57;
+    }
+    50% {
+      background-color: #5733FF;
+    }
+    75% {
+      background-color: #FF3373;
+    }
+    100% {
+      background-color: #33FFFF;
+    }
+  }
+  
+
+  .animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    position: absolute;
+    border-radius: 5px;
+    animation: randomMove 3s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+
+  .animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    position: absolute;
+    border-radius: 5px;
+    animation: randomMove 1s infinite; /* Mengurangi durasi animasi */
+    animation-timing-function: ease-in-out;
+  }
+  
